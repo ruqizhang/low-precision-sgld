@@ -10,7 +10,9 @@ import numpy as np
 from scipy.stats import norm
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
-
+import os
+if not os.path.exists('figs'):
+    os.makedirs('figs')
 parser = argparse.ArgumentParser(description="SGLD training")
 parser.add_argument(
     "--quant_type", type=str, default="f", help="f: full-precision gradient accumulators; \

@@ -12,6 +12,9 @@ from qtorch.optim import OptimLP
 from torch.optim import SGD
 from qtorch import BlockFloatingPoint, FixedPoint, FloatingPoint
 from optim import OptimLP
+import os
+if not os.path.exists('checkpoints'):
+    os.makedirs('checkpoints')
 num_types = ["weight", "activate", "grad", "error"]
 
 parser = argparse.ArgumentParser(description="SGLD training")
