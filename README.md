@@ -25,7 +25,7 @@ its SGD counterpart in the strongly convex setting. To further enable low-precis
 * [torchvision 0.10.0](https://github.com/pytorch/vision/)
 * [QPyTorch](https://github.com/Tiiiger/QPyTorch)
 
-# Experimental Results
+# Usage
 ## Gaussian Density
 
 To reproduce the results of SGLD on a standard Gaussian,
@@ -46,10 +46,10 @@ The training script is ``bnn/train.py`` and the testing script is ``bnn/ens.py``
 ```
 cd bnn
 bash train_fixed.sh     # low-precision SGLD with full-precision gradient accumulators (SGLDLP-F) with 8-bit fixed point on CIFAR10
-bash train_bfp.sh   # low-precision SGLD with variance-corrected low-precision gradient accumulators (VC SGLDLP-L) with 8-bit block floating point on CIFAR10
-bash train_bfp_cyclic.sh # cyclical VC SGLDLP-L with 8-bit block floating point on CIFAR10
-bash ens_fixed.sh # testing the ensemble of the collected samples with fixed point
-bash ens_bfp.sh # testing the ensemble of the collected samples with block floating point
+bash train_bfp.sh     # low-precision SGLD with variance-corrected low-precision gradient accumulators (VC SGLDLP-L) with 8-bit block floating point on CIFAR10
+bash train_bfp_cyclic.sh     # cyclical VC SGLDLP-L with 8-bit block floating point on CIFAR10
+bash ens_fixed.sh     # testing the ensemble of the collected samples with fixed point
+bash ens_bfp.sh     # testing the ensemble of the collected samples with block floating point
 ```
 
 
