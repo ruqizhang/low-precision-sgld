@@ -1,7 +1,7 @@
 # Low-Precision Stochastic Gradient Langevin Dynamics
 
 This repository contains code for the paper
-[Low-Precision Stochastic Gradient Langevin Dynamics](arxiv link), accepted in _International Conference on Machine Learning (ICML), 2022_.
+[Low-Precision Stochastic Gradient Langevin Dynamics](https://arxiv.org/pdf/2206.09909.pdf), accepted in _International Conference on Machine Learning (ICML), 2022_.
 
 ```bibtex
 @article{zhang2022lpsgld,
